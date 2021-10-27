@@ -1,7 +1,8 @@
 import { combineReducers } from "redux";
+import appReducer from './app-reducer'
 
 const reducers = combineReducers({
-    appData: (state: any, action: any) => state 
+    appData: appReducer
 })
 
 export default reducers
