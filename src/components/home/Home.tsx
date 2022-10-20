@@ -9,6 +9,7 @@ export default function Home() {
   const { saveAppData } = bindActionCreators(actionCreators, dispatch);
   const stateData = useSelector((state: AppDataState) => state.appData);
 
+  // after component rendering
   useEffect(() => {
     const appData = {
       userName: 'TestUser',

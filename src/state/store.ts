@@ -9,8 +9,10 @@ declare global {
     }
 }
 
+// redux devtool
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
+// application store
 const store =  createStore(reducers, composeEnhancers(
     applyMiddleware(thunk)
 ))
