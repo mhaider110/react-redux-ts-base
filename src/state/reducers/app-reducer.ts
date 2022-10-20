@@ -9,6 +9,7 @@ const initialState = {
     userEmail: ""
 }
 
+// app reducer
 const reducer = (state: AppState = initialState, action: AppDataAction) => {
     switch (action.type) {
         case AppDataActionTypes.SAVE_APP_DATA:
